@@ -121,7 +121,7 @@ El resultado final del pipeline es doble:
 
 ---
 
-### Vista de base de datos con artículos extraidos usando DBeaver
+### Vista de base de datos con artículos extraidos conectando con DBeaver
 <img width="2222" height="1028" alt="image" src="https://github.com/user-attachments/assets/3a870d61-f6c0-4988-9375-da63d66f979b" />
 
 ### Mapa de Recursos de la Virtual Private Cloud (VPC)
