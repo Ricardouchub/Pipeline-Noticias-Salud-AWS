@@ -71,7 +71,7 @@ El proceso funciona de la siguiente manera:
 * **AWS Systems Manager Parameter Store:** Almacena de forma segura la configuración no secreta, como las claves de las APIs y el email del destinatario.
 * **AWS Secrets Manager:** Almacena de forma segura las credenciales de la base de datos.
 * **Amazon SES (Simple Email Service):** Gestiona el envío de las alertas por correo electrónico.
-* **Amazon EC2 (Bastion Host):** (Opcional para operación, pero necesario para administración) Un pequeño servidor que actúa como un "puente" seguro para que un desarrollador pueda conectarse a la base de datos privada con herramientas como DBeaver.
+* **Amazon EC2 (Bastion Host):** (Opcional) Un pequeño servidor que actúa como puente seguro para que un desarrollador pueda conectarse a la base de datos privada con herramientas como DBeaver.
 
 ---
 
