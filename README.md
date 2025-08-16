@@ -75,7 +75,7 @@ El proceso funciona de la siguiente manera:
 
 ---
 
-## Resultado Final
+## Resultado 
 
 El resultado final del pipeline es doble:
 
