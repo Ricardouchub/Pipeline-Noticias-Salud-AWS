@@ -26,7 +26,7 @@ Este proyecto implementa un pipeline de datos 100% serverless en AWS para recole
 
 ## Características Principales
 
-* **Recolección Diaria Automatizada:** El pipeline se ejecuta automáticamente cada día para buscar las noticias más recientes de múltiples fuentes, en este caso, tres tier gratuitos de APIs de noticias diferentes (`GNews`, `NewsAPI`, `Newsdata.io`) para una cobertura más amplia.
+* **Recolección Diaria Automatizada:** El pipeline se ejecuta automáticamente cada día para buscar las noticias más recientes de múltiples fuentes, en este caso, tres tier gratuitos de APIs de noticias diferentes `GNews`, `NewsAPI`, `Newsdata.io` para una cobertura más amplia.
 * **Procesamiento y Estandarización:** Limpia, unifica el formato y elimina artículos duplicados para asegurar la calidad de los datos.
 * **Almacenamiento Persistente y Seguro:** Guarda los artículos en una base de datos (PostgreSQL) dentro de una red privada.
 * **Alertas por Correo Electrónico:** Envía un resumen diario por email con los artículos nuevos que se han encontrado.
