@@ -1,5 +1,25 @@
 # Pipeline de Datos de Noticias de Salud en AWS
 
+<p align="left">
+  <!-- Estado del proyecto -->
+  <img src="https://img.shields.io/badge/Project_Status-Completed-2ECC71?style=flat-square&logo=checkmarx&logoColor=white" alt="Project Status: Completed"/>
+
+  <!-- Lenguaje y librerías -->
+  <img src="https://img.shields.io/badge/Python-3.10-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"/>
+  <img src="https://img.shields.io/badge/boto3-AWS_SDK-FF9900?style=flat-square&logo=amazonaws&logoColor=white" alt="boto3"/>
+  <img src="https://img.shields.io/badge/psycopg2-Postgres_Adapter-336791?style=flat-square&logo=postgresql&logoColor=white" alt="psycopg2"/>
+  <img src="https://img.shields.io/badge/Requests-HTTP_Client-EE4C2C?style=flat-square&logo=python&logoColor=white" alt="Requests"/>
+
+  <!-- AWS Core -->
+  <img src="https://img.shields.io/badge/AWS_Lambda-ETL_Functions-FF9900?style=flat-square&logo=awslambda&logoColor=white" alt="AWS Lambda"/>
+  <img src="https://img.shields.io/badge/Amazon_EventBridge-Scheduler-FF9900?style=flat-square&logo=amazoneventbridge&logoColor=white" alt="Amazon EventBridge"/>
+  <img src="https://img.shields.io/badge/Amazon_RDS-PostgreSQL-FF9900?style=flat-square&logo=amazonrds&logoColor=white" alt="Amazon RDS"/>
+  
+  <!-- Notifications & Ops -->
+  <img src="https://img.shields.io/badge/Amazon_SES-Email_Service-FF9900?style=flat-square&logo=amazonses&logoColor=white" alt="Amazon SES"/>
+  <img src="https://img.shields.io/badge/Amazon_EC2-Bastion_Host-FF9900?style=flat-square&logo=amazonec2&logoColor=white" alt="Amazon EC2"/>
+</p>
+
 Este proyecto implementa un pipeline de datos 100% serverless en AWS para recolectar, procesar, almacenar y generar alertas sobre noticias relacionadas con enfermedades virales como `virus`, `influenza`, `brote`, etc. El sistema está diseñado para ser automático, seguro y escalable, utilizando la computación en la nube.
 
 ---
