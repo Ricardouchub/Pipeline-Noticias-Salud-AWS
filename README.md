@@ -96,6 +96,12 @@ El resultado final del pipeline es doble:
 
 [LinkedIn](https://www.linkedin.com/in/ricardourdanetacastro)
 
-## Vista de base de datos con artículos extraidos usando DBeaver
+### Vista de base de datos con artículos extraidos usando DBeaver
 <img width="2222" height="1028" alt="image" src="https://github.com/user-attachments/assets/3a870d61-f6c0-4988-9375-da63d66f979b" />
+
+### Mapa de Recursos de la Virtual Private Cloud (VPC)
+<img width="1338" height="577" alt="image" src="https://github.com/user-attachments/assets/4ec299bb-ffbb-48bf-b8f4-66f23eea392e" />
+
+## Registro de Ejecución Exitosa de la Función Lambda
+<img width="1607" height="811" alt="image" src="https://github.com/user-attachments/assets/ea8cb716-9a3c-4c6c-82c6-e8cecfea7827" />
 
