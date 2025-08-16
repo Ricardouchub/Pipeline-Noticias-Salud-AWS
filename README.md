@@ -22,26 +22,29 @@
 
 Este proyecto implementa un pipeline de datos 100% serverless en AWS para recolectar, procesar, almacenar y generar alertas sobre noticias relacionadas con enfermedades virales como `virus`, `influenza`, `brote`, etc. El sistema está diseñado para ser automático, seguro y escalable, utilizando la computación en la nube.
 
----
-
-## Características Principales
-
-* **Recolección Diaria Automatizada:** El pipeline se ejecuta automáticamente cada día para buscar las noticias más recientes de múltiples fuentes, en este caso, tres tier gratuitos de APIs de noticias diferentes `GNews`, `NewsAPI`, `Newsdata.io` para una cobertura más amplia.
-* **Procesamiento y Estandarización:** Limpia, unifica el formato y elimina artículos duplicados para asegurar la calidad de los datos.
-* **Almacenamiento Persistente y Seguro:** Guarda los artículos en una base de datos (PostgreSQL) dentro de una red privada.
-* **Alertas por Correo Electrónico:** Envía un resumen diario por email con los artículos nuevos que se han encontrado.
-* **Arquitectura Segura:** Todos los componentes críticos operan dentro de una VPC, y las credenciales se gestionan de forma segura.
-
----
-
-##  Diagrama de Arquitectura
-
-El pipeline sigue un flujo de datos claro y orquestado por servicios de AWS.
 
 <img width="1788" height="376" alt="image" src="https://github.com/user-attachments/assets/f6911cfa-93c7-40bc-bf02-be18a9e4ba31" />
 
 ---
-El proceso funciona de la siguiente manera:
+
+## Características Principales
+
+* **Recolección Diaria Automatizada:**
+  El pipeline se ejecuta automáticamente cada día para buscar las noticias más recientes de múltiples fuentes, en este caso, tres tier gratuitos de APIs de noticias diferentes `GNews`, `NewsAPI`, `Newsdata.io` para una cobertura más amplia.
+* **Procesamiento y Estandarización:**
+  Limpia, unifica el formato y elimina artículos duplicados para asegurar la calidad de los datos.
+* **Almacenamiento Persistente y Seguro:**
+  Guarda los artículos en una base de datos (PostgreSQL) dentro de una red privada.
+* **Alertas por Correo Electrónico:**
+  Envía un resumen diario por email con los artículos nuevos que se han encontrado.
+* **Arquitectura Segura:**
+  Todos los componentes críticos operan dentro de una VPC, y las credenciales se gestionan de forma segura.
+
+---
+
+##  Arquitectura
+
+El pipeline sigue un flujo de datos claro y orquestado por servicios de AWS de la siguiente manera:
 
 1.  **Disparador:** Cada día a una hora programada, **Amazon EventBridge** activa la función Lambda.
 2.  **Ejecución:** La función **AWS Lambda** se inicia dentro de la VPC y comienza su trabajo:
