@@ -91,7 +91,7 @@ El resultado final del pipeline es doble:
 
 ---
 
-## Cómo Desplegar el Proyecto
+## Despliegue del Proyecto
 
       1.  Requisitos:
           Cuenta de AWS.
