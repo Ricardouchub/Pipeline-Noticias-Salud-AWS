@@ -2,10 +2,11 @@
 
 Este proyecto implementa un pipeline de datos 100% serverless en AWS para recolectar, procesar, almacenar y generar alertas sobre noticias relacionadas con enfermedades virales como `virus`, `influenza`, `brote`, etc. El sistema está diseñado para ser automático, seguro y escalable, utilizando la computación en la nube.
 
+---
+
 ## Características Principales
 
-* **Recolección Diaria Automatizada:** El pipeline se ejecuta automáticamente cada día para buscar las noticias más recientes.
-* **Múltiples Fuentes de Datos:** Extrae información de tres APIs de noticias diferentes (`GNews`, `NewsAPI`, `Newsdata.io`) para una cobertura más amplia.
+* **Recolección Diaria Automatizada:** El pipeline se ejecuta automáticamente cada día para buscar las noticias más recientes de múltiples fuentes, en este caso, tres APIs de noticias diferentes (`GNews`, `NewsAPI`, `Newsdata.io`) para una cobertura más amplia.
 * **Procesamiento y Estandarización:** Limpia, unifica el formato y elimina artículos duplicados para asegurar la calidad de los datos.
 * **Almacenamiento Persistente y Seguro:** Guarda los artículos en una base de datos (PostgreSQL) dentro de una red privada.
 * **Alertas por Correo Electrónico:** Envía un resumen diario por email con los artículos nuevos que se han encontrado.
@@ -55,38 +56,13 @@ El resultado final del pipeline es doble:
 1.  Una **base de datos en RDS** que se actualiza diariamente con noticias curadas sobre temas de salud, lista para ser utilizada en proyectos de análisis, visualización o ciencia de datos.
 2.  Un **correo electrónico de alerta** que se envía al usuario cada día que se encuentran noticias nuevas, proporcionando un resumen inmediato y accesible.
 
-##  Cómo Desplegar el Proyecto
-
-Para replicar este proyecto, sigue estos pasos:
-
-    1. Requisitos:
-      * Una cuenta de AWS.
-      * Python 3.10+ instalado localmente.
-      * AWS CLI configurada.
-      * Git.
-
-    2. Configuración del Entorno:
-      * Clona este repositorio.
-      * Crea y activa un entorno virtual de Python: `python3 -m venv venv` y `source venv/bin/activate`.
-      * Instala las dependencias: `pip install -r requirements.txt`.
-
-    3. Configuración en AWS:
-      * Crea los parámetros en **Parameter Store** para las claves de API y el email.
-      * Verifica tu identidad de correo electrónico en **Amazon SES**.
-      * Crea una base de datos **RDS PostgreSQL** en una VPC.
-      * Guarda las credenciales de la base de datos en **Secrets Manager**.
-      * Configura la red (NAT Gateway, tablas de rutas, etc.) como se discutió.
-
-    4. Despliegue de la Lambda:
-      * Añade las librerías necesarias a una carpeta `package`.
-      * Crea un archivo `.zip` con tu código (`main.py`) y las librerías.
-      * Crea la función Lambda, configúrala para usar la VPC y las subredes privadas.
-      * Añade la capa (Layer) pública de `psycopg2`.
-      * Sube el archivo `.zip`.
-      * Crea la regla en **EventBridge** para disparar la función diariamente.
 
 ## Posibles Mejoras a Futuro
 
 * **Análisis y Visualización:** Conectar herramientas como Tableau, Power BI o Amazon QuickSight a la base de datos para crear dashboards interactivos.
 * **Machine Learning:** Aplicar modelos de Procesamiento de Lenguaje Natural (PLN) para análisis de sentimiento, clasificación de temas o detección de anomalías en la frecuencia de noticias.
-* **Optimización de Costos:** Configurar alertas de presupuesto y analizar los logs para optimizar el uso de los recursos.
+  
+
+## Vista de base de datos con artículos extraidos usando DBeaver
+<img width="2222" height="1028" alt="image" src="https://github.com/user-attachments/assets/3a870d61-f6c0-4988-9375-da63d66f979b" />
+
