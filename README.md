@@ -15,8 +15,9 @@ Este proyecto implementa un pipeline de datos 100% serverless en AWS para recole
 
 El pipeline sigue un flujo de datos claro y orquestado por servicios de AWS.
 
-[AQUÍ VA EL DIAGRAMA DE FLUJO DEL PIPELINE]
+<img width="1788" height="376" alt="image" src="https://github.com/user-attachments/assets/f6911cfa-93c7-40bc-bf02-be18a9e4ba31" />
 
+---
 El proceso funciona de la siguiente manera:
 
 1.  **Disparador:** Cada día a una hora programada, **Amazon EventBridge** activa la función Lambda.
