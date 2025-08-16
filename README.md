@@ -88,6 +88,7 @@ El resultado final del pipeline es doble:
 
 * **`main.py`**: Script principal de Python que contiene toda la lógica para la función AWS Lambda. Se encarga de la extracción de datos desde las APIs, la transformación (limpieza y estandarización) y la carga (guardado en la base de datos y envío de correo).
 * **`requirements.txt`**: Libreridas y dependencias necesarias.
+* **`package.zip`**: Archivo .zip con una carpeta con las librerias descargadas.
 
 ---
 
@@ -105,7 +106,7 @@ El resultado final del pipeline es doble:
           Configura la red NAT Gateway, tablas de rutas y subredes.
 
       3.  Despliegue de Lambda:
-          Instala las librerías necesarias de `requirements.txt` a una carpeta 'package'.
+          Instala las librerías necesarias de `requirements.txt` a una carpeta 'package' o descarga la carpeta 'package' que ya las contiene todas.
           Crea un archivo `.zip` con (`main.py`) y las librerías instaladas en la carpeta.
           Crea la función Lambda, configúrala para usar la VPC y las subredes privadas.
           Sube el archivo `.zip`.
