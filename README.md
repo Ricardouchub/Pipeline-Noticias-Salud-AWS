@@ -1,4 +1,4 @@
-# Pipeline de Datos de Noticias de Salud en AWS
+# Sistema de Monitoreo y Alertas de Salud con un Pipeline de Datos en AWS
 
 <p align="left">
   <!-- Estado del proyecto -->
@@ -34,7 +34,7 @@ Este proyecto implementa un pipeline de datos 100% serverless en AWS para recole
 
 ---
 
-##  Arquitectura y Flujo de Trabajo
+##  Diagrama de Arquitectura
 
 El pipeline sigue un flujo de datos claro y orquestado por servicios de AWS.
 
