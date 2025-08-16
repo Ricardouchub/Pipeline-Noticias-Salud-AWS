@@ -94,28 +94,20 @@ El resultado final del pipeline es doble:
 ## Cómo Desplegar el Proyecto
 
       1.  Requisitos:
-          Una cuenta de AWS.
-          Python 3.10+ instalado localmente.
-          AWS CLI configurada.
-          Git.
+          Cuenta de AWS.
+          Python 3.10+ 
 
-      2.  Configuración del Entorno:
-          Clona este repositorio.
-          Crea y activa un entorno virtual de Python: `python3 -m venv venv` y `source venv/bin/activate`.
-          Instala las dependencias: `pip install -r requirements.txt`.
-
-      3.  Configuración en AWS:
+      2.  Configuración en AWS:
           Crea los parámetros en Parameter Store para las claves de API y el email.
           Verifica tu identidad de correo electrónico en Amazon SES.
           Crea una base de datos RDS PostgreSQL en una VPC.
           Guarda las credenciales de la base de datos en Secrets Manager.
-          Configura la red (NAT Gateway, tablas de rutas, etc.) como se discutió.
+          Configura la red NAT Gateway, tablas de rutas y subredes.
 
-      4.  Despliegue de Lambda:
-          Añade las librerías necesarias a una carpeta 'package'.
-          Crea un archivo `.zip` con tu código (`main.py`) y las librerías.
+      3.  Despliegue de Lambda:
+          Instala las librerías necesarias de `requirements.txt` a una carpeta 'package'.
+          Crea un archivo `.zip` con (`main.py`) y las librerías instaladas en la carpeta.
           Crea la función Lambda, configúrala para usar la VPC y las subredes privadas.
-          Añade la capa (Layer) pública de `psycopg2`.
           Sube el archivo `.zip`.
           Crea la regla en EventBridge para disparar la función diariamente.
 
