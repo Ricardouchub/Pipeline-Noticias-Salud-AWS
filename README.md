@@ -12,6 +12,8 @@ Este proyecto implementa un pipeline de datos 100% serverless en AWS para recole
 * **Alertas por Correo Electrónico:** Envía un resumen diario por email con los artículos nuevos que se han encontrado.
 * **Arquitectura Segura:** Todos los componentes críticos operan dentro de una VPC, y las credenciales se gestionan de forma segura.
 
+---
+
 ##  Arquitectura y Flujo de Trabajo
 
 El pipeline sigue un flujo de datos claro y orquestado por servicios de AWS.
@@ -33,6 +35,8 @@ El proceso funciona de la siguiente manera:
 4.  **Alerta:**
     * Si se guardaron artículos nuevos en la base de datos, la función Lambda utiliza **Amazon SES** para formatear y enviar un correo electrónico de resumen al destinatario configurado.
 
+---
+
 ## Herramientas y Servicios de AWS
 
 * **AWS Lambda:** El núcleo del pipeline, donde se ejecuta todo el código Python para la extracción, transformación y carga (ETL).
@@ -49,6 +53,8 @@ El proceso funciona de la siguiente manera:
 * **Amazon SES (Simple Email Service):** Gestiona el envío de las alertas por correo electrónico.
 * **Amazon EC2 (Bastion Host):** (Opcional para operación, pero necesario para administración) Un pequeño servidor que actúa como un "puente" seguro para que un desarrollador pueda conectarse a la base de datos privada con herramientas como DBeaver.
 
+---
+
 ## Resultado Final
 
 El resultado final del pipeline es doble:
@@ -56,11 +62,14 @@ El resultado final del pipeline es doble:
 1.  Una **base de datos en RDS** que se actualiza diariamente con noticias curadas sobre temas de salud, lista para ser utilizada en proyectos de análisis, visualización o ciencia de datos.
 2.  Un **correo electrónico de alerta** que se envía al usuario cada día que se encuentran noticias nuevas, proporcionando un resumen inmediato y accesible.
 
+---
 
 ## Estructura del Repositorio
 
 * **`main.py`**: Script principal de Python que contiene toda la lógica para la función AWS Lambda. Se encarga de la extracción de datos desde las APIs, la transformación (limpieza y estandarización) y la carga (guardado en la base de datos y envío de correo).
 * **`requirements.txt`**: Libreridas y dependencias necesarias.
+
+---
 
 ## Cómo Desplegar el Proyecto
 
@@ -90,11 +99,7 @@ El resultado final del pipeline es doble:
           Sube el archivo `.zip`.
           Crea la regla en EventBridge para disparar la función diariamente.
 
-## Autor
-
-**Ricardo Urdaneta**
-
-[LinkedIn](https://www.linkedin.com/in/ricardourdanetacastro)
+---
 
 ### Vista de base de datos con artículos extraidos usando DBeaver
 <img width="2222" height="1028" alt="image" src="https://github.com/user-attachments/assets/3a870d61-f6c0-4988-9375-da63d66f979b" />
@@ -108,4 +113,10 @@ El resultado final del pipeline es doble:
 ### Ejemplo del correo de alerta diaria
 <img width="2213" height="1145" alt="image" src="https://github.com/user-attachments/assets/60e56278-f8a0-4fff-8431-d42536c506de" />
 
+---
 
+## Autor
+
+**Ricardo Urdaneta**
+
+**[LinkedIn](https://www.linkedin.com/in/ricardourdanetacastro)**
