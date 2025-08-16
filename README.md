@@ -57,11 +57,17 @@ El resultado final del pipeline es doble:
 2.  Un **correo electrónico de alerta** que se envía al usuario cada día que se encuentran noticias nuevas, proporcionando un resumen inmediato y accesible.
 
 
-## Posibles Mejoras a Futuro
+## Estructura del Repositorio
 
-* **Análisis y Visualización:** Conectar herramientas como Tableau, Power BI o Amazon QuickSight a la base de datos para crear dashboards interactivos.
-* **Machine Learning:** Aplicar modelos de Procesamiento de Lenguaje Natural (PLN) para análisis de sentimiento, clasificación de temas o detección de anomalías en la frecuencia de noticias.
-  
+* **`main.py`**: Script principal de Python que contiene toda la lógica para la función AWS Lambda. Se encarga de la extracción de datos desde las APIs, la transformación (limpieza y estandarización) y la carga (guardado en la base de datos y envío de correo).
+* **`requirements.txt`**: Libreridas y dependencias necesarias.
+
+
+## Autor
+
+**Ricardo Urdaneta**
+
+[LinkedIn](https://www.linkedin.com/in/ricardourdanetacastro)
 
 ## Vista de base de datos con artículos extraidos usando DBeaver
 <img width="2222" height="1028" alt="image" src="https://github.com/user-attachments/assets/3a870d61-f6c0-4988-9375-da63d66f979b" />
