@@ -102,6 +102,10 @@ El resultado final del pipeline es doble:
 ### Mapa de Recursos de la Virtual Private Cloud (VPC)
 <img width="1338" height="577" alt="image" src="https://github.com/user-attachments/assets/4ec299bb-ffbb-48bf-b8f4-66f23eea392e" />
 
-## Registro de Ejecución Exitosa de la Función Lambda
+### Registro de prueba exitosa de la función Lambda
 <img width="1607" height="811" alt="image" src="https://github.com/user-attachments/assets/ea8cb716-9a3c-4c6c-82c6-e8cecfea7827" />
+
+### Ejemplo del correo de alerta diaria
+<img width="2213" height="1145" alt="image" src="https://github.com/user-attachments/assets/60e56278-f8a0-4fff-8431-d42536c506de" />
+
 
