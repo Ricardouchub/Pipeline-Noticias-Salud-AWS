@@ -82,7 +82,7 @@ El pipeline sigue un flujo de datos claro y orquestado por servicios de AWS de l
 
 El resultado final del pipeline es doble:
 
-1.  Una **base de datos en RDS** que se actualiza diariamente con noticias curadas sobre temas de salud, lista para ser utilizada en proyectos de análisis, visualización o ciencia de datos.
+1.  Una **base de datos** que se actualiza diariamente con noticias sobre temas de salud, lista para ser utilizada en proyectos de análisis, visualización o data science.
 2.  Un **correo electrónico de alerta** que se envía al usuario cada día que se encuentran noticias nuevas, proporcionando un resumen inmediato y accesible.
 
 ---
