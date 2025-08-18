@@ -78,15 +78,6 @@ El pipeline sigue un flujo de datos claro y orquestado por servicios de AWS de l
 
 ---
 
-## Resultado 
-
-El resultado final del pipeline es doble:
-
-1.  Una **base de datos** que se actualiza diariamente con noticias sobre temas de salud, lista para ser utilizada en proyectos de análisis, visualización o data science.
-2.  Un **correo electrónico de alerta** que se envía al usuario cada día que se encuentran noticias nuevas, proporcionando un resumen inmediato y accesible.
-
----
-
 ## Estructura del Repositorio
 
 * **`main.py`**: Script principal de Python que contiene toda la lógica para la función AWS Lambda. Se encarga de la extracción de datos desde las APIs, la transformación (limpieza y estandarización) y la carga (guardado en la base de datos y envío de correo).
@@ -117,17 +108,25 @@ El resultado final del pipeline es doble:
 
 ---
 
-### Vista de base de datos con artículos extraidos con SQL en DBeaver
+## Resultado 
+
+El resultado final del pipeline es doble:
+
+1.  Una **base de datos** que se actualiza diariamente con noticias sobre temas de salud, lista para ser utilizada en proyectos de análisis, visualización o data science.
+2.  Un **correo electrónico de alerta** que se envía al usuario cada día que se encuentran noticias nuevas, proporcionando un resumen inmediato y accesible.
+
+
+### *Vista de base de datos con artículos extraidos con SQL en DBeaver*
 <img width="2525" height="1231" alt="image" src="https://github.com/user-attachments/assets/528321c0-4df8-4dd5-9012-6a3fb82c034c" />
 
 
-### Mapa de Recursos de la Virtual Private Cloud (VPC)
+### *Mapa de Recursos de la Virtual Private Cloud (VPC)*
 <img width="1338" height="577" alt="image" src="https://github.com/user-attachments/assets/4ec299bb-ffbb-48bf-b8f4-66f23eea392e" />
 
-### Registro de prueba exitosa de la función Lambda
+### *Registro de prueba exitosa de la función Lambda*
 <img width="1607" height="811" alt="image" src="https://github.com/user-attachments/assets/ea8cb716-9a3c-4c6c-82c6-e8cecfea7827" />
 
-### Ejemplo del correo de alerta diaria
+### *Correo de alerta diaria*
 <img width="2213" height="1145" alt="image" src="https://github.com/user-attachments/assets/60e56278-f8a0-4fff-8431-d42536c506de" />
 
 ---
