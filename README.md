@@ -2,7 +2,7 @@
 
 <p align="left">
   <!-- Estado del proyecto -->
-  <img src="https://img.shields.io/badge/Project_Status-Completed-2ECC71?style=flat-square&logo=checkmarx&logoColor=white" alt="Project Status: Completed"/>
+  <img src="https://img.shields.io/badge/Project_Status-Completado-2ECC71?style=flat-square&logo=checkmarx&logoColor=white" alt="Project Status: Completed"/>
 
   <!-- Lenguaje y librerías -->
   <img src="https://img.shields.io/badge/Python-3.10-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"/>
