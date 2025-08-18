@@ -1,4 +1,4 @@
-# Sistema de Monitoreo y Alertas de Salud con Pipeline de Datos Serverless en AWS
+# Sistema de Monitoreo y Alertas de Salud con un Pipeline de Datos Serverless en AWS
 
 <p align="left">
   <!-- Estado del proyecto -->
