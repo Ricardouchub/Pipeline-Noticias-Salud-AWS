@@ -88,20 +88,17 @@ El pipeline sigue un flujo de datos claro y orquestado por servicios de AWS de l
 
 ## Despliegue del Proyecto
 
-      1.  Requisitos:
-          Cuenta de AWS.
-          Python 3.10+ 
 
-      2.  Configuración en AWS:
+      1.  Configuración AWS:
           Crea los parámetros en Parameter Store para las claves de API y el email.
           Verifica tu identidad de correo electrónico en Amazon SES.
           Crea una base de datos RDS PostgreSQL en una VPC.
           Guarda las credenciales de la base de datos en Secrets Manager.
           Configura la red NAT Gateway, tablas de rutas y subredes.
 
-      3.  Despliegue de Lambda:
+      2.  Despliegue de Lambda:
           Instala las librerías necesarias de `requirements.txt` a una carpeta 'package' o descarga la carpeta 'package' que ya las contiene todas.
-          Crea un archivo `.zip` con (`main.py`) y las librerías instaladas en la carpeta.
+          Crea un archivo `.zip` incluyendo `main.py` y las librerías instaladas en la carpeta.
           Crea la función Lambda, configúrala para usar la VPC y las subredes privadas.
           Sube el archivo `.zip`.
           Crea la regla en EventBridge para disparar la función diariamente.
