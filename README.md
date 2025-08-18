@@ -117,8 +117,9 @@ El resultado final del pipeline es doble:
 
 ---
 
-### Vista de base de datos con artículos extraidos conectando con DBeaver
-<img width="2222" height="1028" alt="image" src="https://github.com/user-attachments/assets/3a870d61-f6c0-4988-9375-da63d66f979b" />
+### Vista de base de datos con artículos extraidos con SQL en DBeaver
+<img width="2525" height="1231" alt="image" src="https://github.com/user-attachments/assets/528321c0-4df8-4dd5-9012-6a3fb82c034c" />
+
 
 ### Mapa de Recursos de la Virtual Private Cloud (VPC)
 <img width="1338" height="577" alt="image" src="https://github.com/user-attachments/assets/4ec299bb-ffbb-48bf-b8f4-66f23eea392e" />
