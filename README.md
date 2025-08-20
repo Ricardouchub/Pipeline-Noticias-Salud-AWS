@@ -24,7 +24,9 @@ Este proyecto implementa una solución de datos de extremo a extremo en AWS. Con
 1.  Un **pipeline de datos** serverless que recolecta, procesa y almacena automáticamente noticias sobre temas espoecíficos de salud.
 2.  Una **API REST** que expone estos datos para ser consumidos por un **dashboard interactivo** desplegado en la nube.
 
-<img width="1788" height="376" alt="image" src="https://github.com/user-attachments/assets/f6911cfa-93c7-40bc-bf02-be18a9e4ba31" />
+### [| Dashboard |](https://pipeline-noticias-salud-aws-3hyk4appebu7vnqjwrnxwhv.streamlit.app)
+
+<img width="1113" height="773" alt="image" src="https://github.com/user-attachments/assets/1b0d118a-5fc1-4731-9b3f-c6ddcffa1e92" />
 
 ---
 
@@ -122,6 +124,10 @@ El despliegue se divide en dos partes: el backend en AWS y el frontend en Render
 
 ### *Correo de alerta diaria*
 <img width="2213" height="1145" alt="image" src="https://github.com/user-attachments/assets/60e56278-f8a0-4fff-8431-d42536c506de" />
+
+### *Dashboard conectado a la API para visualizar las noticias extraidas*
+<img width="2472" height="1131" alt="image" src="https://github.com/user-attachments/assets/2341a21f-83ca-4239-92b4-dc85a942f4de" />
+
 
 ---
 
