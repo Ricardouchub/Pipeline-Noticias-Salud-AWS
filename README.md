@@ -82,7 +82,6 @@ El pipeline sigue un flujo de datos claro y orquestado por servicios de AWS de l
 
 * **`main.py`**: Script principal de Python que contiene toda la lógica para la función AWS Lambda. Se encarga de la extracción de datos desde las APIs, la transformación (limpieza y estandarización) y la carga (guardado en la base de datos y envío de correo).
 * **`requirements.txt`**: Libreridas y dependencias necesarias.
-* **`package.zip`**: Archivo .zip con una carpeta con las librerias descargadas.
 
 ---
 
