@@ -78,17 +78,6 @@ El pipeline sigue un flujo de datos claro y orquestado por servicios de AWS:
 
 ---
 
-## Estructura del Repositorio
-
-Este repositorio contiene el código para el **dashboard de Streamlit**. El código para las funciones Lambda se gestiona por separado.
-
-* **`app.py`**: Script principal de la aplicación Streamlit que construye la interfaz del dashboard y llama a la API.
-* **`requirements.txt`**: Lista de las dependencias de Python necesarias para ejecutar el dashboard.
-* **`README.md`**: Documentación completa del proyecto.
-* **`img/`**: Carpeta que contiene las imágenes y diagramas utilizados en la documentación.
-
----
-
 ## Despliegue
 
 El despliegue se divide en dos partes: el backend en AWS y el frontend en Render.
