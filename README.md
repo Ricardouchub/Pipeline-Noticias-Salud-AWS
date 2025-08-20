@@ -28,8 +28,11 @@ Este proyecto implementa una solución de datos de extremo a extremo en AWS. Con
 <p align="center">
   <a href="https://pipeline-noticias-salud-aws-3hyk4appebu7vnqjwrnxwhv.streamlit.app">| Dashboard |</a>
 </p>
-
-
+<p align="center">
+  <a href="https://pipeline-noticias-salud-aws-3hyk4appebu7vnqjwrnxwhv.streamlit.app" target="_blank">
+    <img width="491" height="228" alt="image" src="https://github.com/user-attachments/assets/a8cfb45e-68c0-4a3e-81fb-9a6c3ba4a56d" />
+  </a>
+</p>
 
 ----
 ## Diagrama de Arquitectura
