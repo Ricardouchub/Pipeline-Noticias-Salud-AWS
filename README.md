@@ -48,9 +48,9 @@ El pipeline sigue un flujo de datos claro y orquestado por servicios de AWS de l
 
 1.  **Disparador:** Cada día a una hora programada, **Amazon EventBridge** activa la función Lambda.
 2.  **Ejecución:** La función **AWS Lambda** se inicia dentro de la VPC y comienza su trabajo:
-    * **Configuración Segura:** Se conecta a **AWS Parameter Store** para obtener las claves de las APIs y el email del destinatario.
-    * **Salida a Internet:** Utiliza un **NAT Gateway** para conectarse de forma segura a la internet pública y llamar a las tres APIs de noticias.
-    * **Procesamiento:** Recibe las respuestas, estandariza los artículos a un formato común y elimina los duplicados.
+    * Se conecta a **AWS Parameter Store** para obtener las claves de las APIs y el email del destinatario.
+    * Utiliza un **NAT Gateway** para conectarse de forma segura a la internet pública y llamar a las tres APIs de noticias.
+    * Recibe las respuestas, estandariza los artículos a un formato común y elimina los duplicados.
 3.  **Almacenamiento:**
     * La función Lambda obtiene la contraseña de la base de datos desde **AWS Secrets Manager**.
     * Se conecta a la base de datos **Amazon RDS (PostgreSQL)**, que también está en la red privada.
