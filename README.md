@@ -24,7 +24,18 @@ Este proyecto implementa una solución de datos de extremo a extremo en AWS. Con
 1.  Un **pipeline de datos** serverless que recolecta, procesa y almacena automáticamente noticias sobre temas espoecíficos de salud.
 2.  Una **API REST** que expone estos datos para ser consumidos por un **dashboard interactivo** desplegado en la nube.
 
-### [| Dashboard |](https://pipeline-noticias-salud-aws-3hyk4appebu7vnqjwrnxwhv.streamlit.app)
+
+<p align="center">
+  <a href="https://pipeline-noticias-salud-aws-3hyk4appebu7vnqjwrnxwhv.streamlit.app">| Dashboard |</a>
+</p>
+<p align="center">
+  <a href="https://pipeline-noticias-salud-aws-3hyk4appebu7vnqjwrnxwhv.streamlit.app" target="_blank">
+    <img width="491" height="228" alt="image" src="https://github.com/user-attachments/assets/a8cfb45e-68c0-4a3e-81fb-9a6c3ba4a56d" />
+  </a>
+</p>
+
+----
+## Diagrama de Arquitectura
 
 <img width="1113" height="773" alt="image" src="https://github.com/user-attachments/assets/1b0d118a-5fc1-4731-9b3f-c6ddcffa1e92" />
 
@@ -75,17 +86,6 @@ El pipeline sigue un flujo de datos claro y orquestado por servicios de AWS:
 * **Gestión de Configuración:** AWS Systems Manager Parameter Store, AWS Secrets Manager
 * **Notificaciones:** Amazon SES
 * **Dashboard:** Streamlit
-
----
-
-## Estructura del Repositorio
-
-Este repositorio contiene el código para el **dashboard de Streamlit**. El código para las funciones Lambda se gestiona por separado.
-
-* **`app.py`**: Script principal de la aplicación Streamlit que construye la interfaz del dashboard y llama a la API.
-* **`requirements.txt`**: Lista de las dependencias de Python necesarias para ejecutar el dashboard.
-* **`README.md`**: Documentación completa del proyecto.
-* **`img/`**: Carpeta que contiene las imágenes y diagramas utilizados en la documentación.
 
 ---
 
