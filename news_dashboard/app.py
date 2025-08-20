@@ -13,13 +13,11 @@ st.set_page_config(
     layout="wide"
 )
 
-# --- API URL ---
-API_URL = "https://v1ctjeryd0.execute-api.us-east-1.amazonaws.com/prod/noticias"
-
 # --- Autor y Enlaces ---
 autor = "Ricardo Urdaneta"
 linkedin_url = "https://www.linkedin.com/in/ricardourdanetacastro"
 github_url = "https://github.com/Ricardouchub"
+API_URL = st.secrets["api_url"]
 
 # --- Estilo ---
 st.markdown("""
@@ -53,6 +51,7 @@ with st.sidebar:
 def load_data():
     try:
         r = requests.get(API_URL, timeout=10)
+        
         r.raise_for_status()
         body = r.json().get("body")
         data = json.loads(body) if isinstance(body, str) else body
