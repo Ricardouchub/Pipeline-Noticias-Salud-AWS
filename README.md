@@ -21,8 +21,8 @@
 </p>
 
 Este proyecto implementa una solución de datos de extremo a extremo en AWS. Consiste en dos fases principales:
-1.  Un **pipeline de datos** serverless que recolecta, procesa y almacena automáticamente noticias sobre temas espoecíficos de salud.
-2.  Una **API REST** que expone estos datos para ser consumidos por un **dashboard interactivo** desplegado en la nube.
+1. **Pipeline de datos** serverless que recolecta, procesa y almacena automáticamente noticias sobre temas espoecíficos de salud.
+2. **API REST** que expone estos datos para ser consumidos por un **dashboard interactivo** desplegado en la nube.
 
 
 <p align="center">
